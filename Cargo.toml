@@ -2,7 +2,15 @@
 name = "oauth2-pg-store"
 version = "0.1.0"
 edition = "2024"
+description = "PostgreSQL-backed secure token store for OAuth2 in Rust. Hashes tokens with BLAKE3 (never plaintext), supports revocation, cleanup, and integrates with the oauth2 crate. Ideal for auth servers and API validation."
 
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/olatunbosunoyeleke94/oauth2-pg-store"
+homepage = "https://github.com/olatunbosunoyeleke94/oauth2-pg-store"    
+documentation = "https://docs.rs/oauth2-pg-store"                       
+keywords = ["oauth2", "postgres", "token-store", "auth", "sqlx"]       
+categories = ["authentication", "database", "asynchronous"] 
 
 [dependencies]
 oauth2 = { version = "5", features = ["reqwest"] }
