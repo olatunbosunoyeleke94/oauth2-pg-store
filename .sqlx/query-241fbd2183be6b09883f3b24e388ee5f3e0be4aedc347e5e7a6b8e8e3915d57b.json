@@ -1,0 +1,12 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n            DELETE FROM oauth2_tokens\n            WHERE revoked = TRUE\n               OR (expires_at IS NOT NULL AND expires_at < NOW())\n            ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": []
+  },
+  "hash": "241fbd2183be6b09883f3b24e388ee5f3e0be4aedc347e5e7a6b8e8e3915d57b"
+}
